@@ -1,0 +1,37 @@
+{
+  "name": "eth-ipfs",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.4.1",
+    "filepond": "^4.4.3",
+    "fs-extra": "^5.0.0",
+    "hash": "^0.2.1",
+    "ipfs-api": "^26.1.2",
+    "react": "^16.8.6",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.8.6",
+    "react-dropzone": "^4.3.0",
+    "react-filepond": "^7.0.1",
+    "react-scripts": "^3.0.0",
+    "web3": "^1.0.0-beta.54"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
