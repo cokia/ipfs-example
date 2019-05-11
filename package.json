@@ -33,5 +33,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-plugin-inline-json-import": "^0.3.2",
+    "babel-plugin-root-import": "^6.1.0"
   }
 }
