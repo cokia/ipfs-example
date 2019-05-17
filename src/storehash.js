@@ -3,9 +3,8 @@ import Web3 from 'web3';
 const web3 = new Web3(window.web3.currentProvider);
 
 
-//access our local copy to contract deployed on rinkeby testnet
-//use your own contract address
-const address = '0xb84b12e953f5bcf01b05f926728e855f2d4a67a9';
+//access our local copy to contract deployed on ropsten testnet
+const address = '0xd4f91B126778BF4E8D933897085FA204BaDc127F';
 //use the ABI from your contract
 const abi = [
   {
