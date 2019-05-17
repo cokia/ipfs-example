@@ -1,15 +1,14 @@
 import { Table, Grid, Button, Form } from 'react-bootstrap';
 import React, { Component } from 'react';
 
-//import logo from './logo.svg';
-
 import './App.css';
+
 // import storehash from './storehash';
-/* -------------web3----------------- */
-/* overrides metamask v0.2 for our v 1.0 */
+/* -------------web3-----------------
+    overrides metamask v0.2 for our v 1.0 */
 
 // import Web3 from 'web3';
-// const web3 = new Web3(window.web3.currentProvider);ㅋ
+// const web3 = new Web3(window.web3.currentProvider);
 
 /* -------------IPFS--------------- */
 const IPFS = require('ipfs-api');
@@ -53,6 +52,7 @@ class App extends Component {
     const buffer = await Buffer.from(reader.result);
     //set this buffer -using es6 syntax
     this.setState({ buffer });
+
   };
 
   onRefresh = async () => {
@@ -118,6 +118,7 @@ class App extends Component {
       })
     })
   };
+
 
   createAndDownloadBlobFile = (body, filename, extension = 'png') => {
     const blob = new Blob([body]);
