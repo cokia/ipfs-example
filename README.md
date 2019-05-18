@@ -32,9 +32,13 @@ MAC :
 ubuntu : 
 1. ipfs 설치하기
 `sudo apt-get install ipfs`
+---
 
----
-windows : 
-1. https://dist.ipfs.io/#go-ipfs 에 가서 다운로드 받는다.
-2. 압축을 풀고, CMD 를 실행해서 해당 다운로드 받은 파일을 압축을 풀고 그 경로로 간다.
----
+## IPFS 데몬 실행하기 
+(윈도우의 경우 ipfs.exe가 있는 해당경로에 있다는 가정하에 진행합니다)
+
+`ipfs daemon`
+
+을 하면 데몬이 자동으로 실행된다.
+크롬이나 브라우저를 켜고 
+"http://localhost:5001" 로 가면 web-ui 가 보입니다..!
