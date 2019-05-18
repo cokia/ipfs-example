@@ -1,6 +1,5 @@
 import { Table, Grid, Button, Form } from 'react-bootstrap';
 import React, { Component } from 'react';
-
 import './App.css';
 
 // import storehash from './storehash';
@@ -209,7 +208,7 @@ class App extends Component {
         </Grid>
       </div>
     );
-  } //render
+  }
 }
 
 export default App;
