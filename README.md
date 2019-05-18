@@ -1,55 +1,56 @@
-# IPFS-EXAMPLE for ETHCON KOREA 2019
+# ipfs-example
+😊Let's IPFS! GOda~ Goda~
 
-## IPFS 설치하기
+## Pre install 
+### MAC
+1. Brew 설치하기
 
-** 방법 1 : 나는 편한게 최고다! (권장 - 특히 윈도우) **
+        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-windows : 
-1. https://golang.org 에 가서 go를 다운로드 받고 설치한다.
-2. https://dist.ipfs.io/#go-ipfs 에 가서 다운로드 받는다.
-3. 압축을 풀고, 받은 파일을 압축을 푼다 
-4: `setx path "%PATH%;파일을 받은 경로"` 를 CMD에 입력한다
+    (Brew 가 있다면 안해도됨)
 
-(보통 `c:\user\사용자이름\downloads\go-ipfs_v0.4.20_windows-amd64` 입니다.)
+    (만약 Xcode 관련 에러가 뜬다면 ` xcode-select --install` 를 입력하고, 설치한다)
 
+2. GIT/NPM/NODE/ipfs-js 설치하기
 
+        brew install git
+        brew install ipfs
+[node 다운로드](https://nodejs.org/dist/v10.15.3/node-v10.15.3.pkg)
 
-MAC : 
-1. https://dist.ipfs.io/#go-ipfs 에 가서 다운로드 받는다.
-2. 압축을 풀고, CMD 를 실행해서 해당 다운로드 받은 파일을 압축을 풀고(`tar xvfz 파일이름`) 그 경로로 간다.
-
-Linux : 
-1. https://dist.ipfs.io/#go-ipfs 에 가서 다운로드 받는다.
-2. 압축을 풀고, 터미널 를 실행해서 해당 다운로드 받은 파일을 압축을 풀고(`tar xvfz 파일이름`) 그 경로로 간다.
-
-** 방법 2 : 나는 터미널이 좋다! **
-
-MAC : 
-1. 의존 라이브러리 설치하기
-`xcode-select --install`
-
-2.Brew 설치하기
-`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-이외에 시키는 명령어가 있다면 따라서 쳐주세요!
-
-3. IPFS 설치하기
-`brew install ipfs`
-
-ubuntu : 
-1. ipfs 설치하기
-`sudo apt-get install ipfs`
+다운로드를 클릭해서 node 를 설치한다
 
 
-## IPFS 데몬 실행하기 
+3. 깃 클론하기
 
-그전에 초기화 명령어인 init 먼저..!
-`ipfs init`
+        git clone https://github.com/cokia/ipfs-example
 
-그리고 데몬 실행 명령어
-`ipfs daemon`
 
-을 하면 데몬이 자동으로 실행된다.
-크롬이나 브라우저를 켜고 
-"http://localhost:5001" 로 가면 web-ui 가 보입니다..!
+npm audit fix --force
 
-## ipfs에 파일 업로드 하기
+npm install
+
+---
+### Ubuntu
+1. GIT/NPM/NODE/IPFS 설치하기
+
+                sudo apt-get update
+                sudo apt-get install 
+                cd ~
+                sudo apt-get install git
+                golang-go -y
+                wget https://dist.ipfs.io/go-ipfs/v0.4.10/go-ipfs_v0.4.10_linux-386.tar.gz
+                tar xvfz go-ipfs_v0.4.10_linux-386.tar.gz
+                sudo mv go-ipfs/ipfs /usr/local/bin/ipfs
+
+## issue
+ error: use of undeclared identifier 'uint64_t' 관련 에러가 `npm install`중에 뜬다
+
+ - Node 버전이 너무 높아서 그렇다. 10 버전대가 제일 안정적이라고 알려져있으니 그버전으로 다운그레이드 해보자. 
+
+
+ Module not found: Can't resolve 'eth-lib/src/hash' in '/Users/XXX/dev/balance-manager/node_modules/web3/packages/web3-utils/src'
+
+ - Web3 버전이 낮아서 그렇다. `npm uninstall web3` 한다음에 `npm install -g web3` 으로 혼내주자(???)
+
+
+ 
