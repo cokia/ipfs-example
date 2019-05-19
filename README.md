@@ -36,11 +36,8 @@ npm install
                 sudo apt-get update
                 sudo apt-get install 
                 cd ~
-                sudo apt-get install git
-                golang-go -y
-                wget https://dist.ipfs.io/go-ipfs/v0.4.10/go-ipfs_v0.4.10_linux-386.tar.gz
-                tar xvfz go-ipfs_v0.4.10_linux-386.tar.gz
-                sudo mv go-ipfs/ipfs /usr/local/bin/ipfs
+                sudo apt-get install git golang-go -y
+                sudo snap install ipfs
 
 ## issue
  error: use of undeclared identifier 'uint64_t' 관련 에러가 `npm install`중에 뜬다
