@@ -25,9 +25,9 @@
         git clone https://github.com/cokia/ipfs-example
 
 
-npm audit fix --force
-
-npm install
+4. 실행하기 
+`npm audit fix --force`
+`npm install`
 
 ---
 ### Ubuntu
@@ -38,6 +38,11 @@ npm install
                 cd ~
                 sudo apt-get install git golang-go -y
                 sudo snap install ipfs
+2. [node 다운로드](https://nodejs.org/en/download/current/)
+
+3. 실행하기 
+`npm audit fix --force`
+`npm install`
 
 ## issue
  error: use of undeclared identifier 'uint64_t' 관련 에러가 `npm install`중에 뜬다
