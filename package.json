@@ -18,6 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "deploy": "npm run build && gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
@@ -36,6 +37,8 @@
   },
   "devDependencies": {
     "babel-plugin-inline-json-import": "^0.3.2",
-    "babel-plugin-root-import": "^6.1.0"
-  }
+    "babel-plugin-root-import": "^6.1.0",
+    "gh-pages": "^2.0.1"
+  },
+  "homepage": "https://ipfs.cloudus.io"
 }
