@@ -16,7 +16,7 @@
 	brew install ipfs # IPFS 설치
 	```
 3. NODE.JS & NPM 설치
-	[NODE.JS 설치](https://nodejs.org/) 에서 LTS 버전 패키지를 설치하여 주세요.
+	- [NODE.JS](https://nodejs.org/) 에서 LTS 버전 패키지를 설치하여 주세요.
 
 3. 프로젝트 클론
 	```sh
