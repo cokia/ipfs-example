@@ -3,21 +3,22 @@
 
 ## Pre install 
 ### MAC OS (OSX)
-1. Brew 설치하기
+1. Brew 설치
 	```sh
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	```
 	- Brew 가 이미 설치되어 있을 경우, 해당 과정은 넘어가셔도 무방합니다.
 	- 만약 `Xcode`와 관련된 에러가 발생할 경우 `xcode-select --install`를 입력하신 뒤, 재시도해보세요.
 
-2. GIT / NODE.JS / NPM / IPFS-JS 설치하기
+2. GIT & IPFS 설치
 	```sh
 	brew install git # GIT 설치
 	brew install ipfs # IPFS 설치
 	```
+3. NODE.JS & NPM 설치
 	[NODE.JS 설치](https://nodejs.org/) 에서 LTS 버전 패키지를 설치하여 주세요.
 
-3. 해당 프로젝트 클론하기
+3. 프로젝트 클론
 	```sh
 	git clone https://github.com/cokia/ipfs-example
 	```
@@ -30,7 +31,7 @@
 
 ---
 ### UBUNTU
-1. GIT / NODE.JS / NPM / IPFS 설치하기
+1. GIT & NODE.JS & NPM & IPFS 설치
 	```sh
 	sudo apt-get update # APT 업데이트
 	sudo apt-get install git # GIT 설치
@@ -38,6 +39,11 @@
 	curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - # NODE.JS 리포 설치
 	sudo apt-get install -y nodejs # NODE.JS & NPM 설치
 	sudo snap install ipfs # IPFS 설치
+	```
+
+2. 프로젝트 클론
+	```sh
+	git clone https://github.com/cokia/ipfs-example
 	```
 
 3. 실행하기 
