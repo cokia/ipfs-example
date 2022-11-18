@@ -13,7 +13,7 @@
     "react-dom": "^16.8.6",
     "react-dropzone": "^4.3.0",
     "react-filepond": "^7.0.1",
-    "react-scripts": "^3.0.0",
+    "react-scripts": "^5.0.1",
     "web3": "^1.0.0-beta.54"
   },
   "scripts": {
